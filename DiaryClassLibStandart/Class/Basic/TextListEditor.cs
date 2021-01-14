@@ -8,6 +8,7 @@ using LibForPersonalTool.Abstract;
 
 namespace LibForPersonalTool.Class.Basic
 {
+    //Удобный редактор текстовых полей для быстрого создания списков.
     public class TextListEditor:BaseTextEditor
     {
         Regex startSpaces = new Regex(@"^\s*");
@@ -15,7 +16,6 @@ namespace LibForPersonalTool.Class.Basic
 
         public TextListEditor(TextBoxBase textBox) : base(textBox)
         {
-
         }
 
         protected override void ProcessTextChange(object sender, EventArgs e)
